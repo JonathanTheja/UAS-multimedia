@@ -1,4 +1,4 @@
-var menus = [{
+const menus = [{
     "menu": "Home",
     "href": "index.html"
 },

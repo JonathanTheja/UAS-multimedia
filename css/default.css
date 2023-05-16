@@ -20,6 +20,13 @@ body {
     overflow: auto;
 }
 
+#nav {
+    position: fixed;
+    top: 0;
+    background-color: #F3ECB0;
+    width: 100vw;
+}
+
 ul.navbar li a.page_now {
     font-weight: bold;
     text-decoration: underline;
@@ -71,6 +78,54 @@ ul.navbar li#logo {
 ul.navbar li a:hover {
     background-color: #285430;
     color: white;
+    border-radius: 5px;
+}
+
+#burger_icon {
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 2px;
+    /* padding-bottom: -6px; */
+    height: 43px;
+    background-color: #8CC63F;
+    font-size: 40px;
+    display: none;
+}
+
+#burger_icon:hover {
+    background-color: #285430;
+    color: white;
+}
+
+#burger_menu {
+    /* width: 25px;
+    height: 100px; */
+    margin-bottom: 5px;
+    display: none;
+}
+
+.burger_detail {
+    background-color: #285430;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    padding: 5px 0;
+}
+
+a.burger_detail {
+    color: #d3f4a8;
+    text-decoration: none;
+}
+
+.burger_page_now {
+    background-color: #1c3b22;
+    color: #f4fee6;
+}
+
+a.burger_detail:hover {
+    background-color: #1c3b22;
+    color: #f4fee6;
 }
 
 .landing {
@@ -86,4 +141,56 @@ ul.navbar li a:hover {
     color: white;
     font-size: 40px;
     font-weight: bold;
+    margin-top: 60px;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    color: #ADE792;
+    font-weight: bold;
+}
+
+.home_promo {
+    background-color: #285430;
+    margin-top: 20px;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.img_promo {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_promo {
+    padding: 10px 25px;
+    background-color: #F3ECB0;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn_promo:hover {
+    background-color: #d7d19a;
+}
+
+.home_menu{
+    background-image: url('../assets/Path\ 1.png');
+    min-height: 80vh;
+    background-size: cover;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
 }

@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeaPot</title>
     <script src="./lib/jquery.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/nav.css">
 </head>
 
 <body>
-    <div class="container" id="nav"></div>
+    <div id="nav">
+        <div class="container"></div>
+    </div>
     <div class="landing">
         <div>
             <div style="display: inline;">EACH CUP OF</div>
@@ -20,8 +24,41 @@
         </div>
         <div>AN IMAGINARY JOURNEY</div>
     </div>
+    <div class="home_promo">
+        <div class="container">
+            <div class="title">Promo Terkini</div>
+            <br>
+            <div class="flex_center">
+                <img class="img_promo" width="800px" src="./assets/two-glass-cups-tea-with-teapot-wooden-board.png"
+                    alt=""></div>
+            <br>
+            <div class="flex_center">
+                <a class="btn_promo" href="promo.html">Cek Promo</a>
+            </div>
+        </div>
+        <br>
+        <div class="home_menu">
+            <div class="container">
+                <div class="title">Menu</div>
+                <div style="display: flex; justify-content: space-between;margin-top: 50px;">
+                    <div
+                        style="width: 400px;background-color: white; height: 400px;border-radius: 10px;background-image: url('https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1571304750/q4u07bx0uifu4drmojmj.jpg');background-position: center;background-size: cover;">
+                    </div>
+                    <div
+                        style="width: 400px;background-color: white; height: 400px;border-radius: 10px;background-image: url('https://content.neutron.co.id/assets/main/blog/_768x512_crop_center-center_82_line/green-and-black-ceramic-bowl-2318033.jpg');background-position: center;background-size: cover;">
+                    </div>
+                    <div
+                        style="width: 400px;background-color: white; height: 400px;border-radius: 10px;background-image: url('https://tugoid.s3.amazonaws.com/img/p/7/9/8/798-superlarge_default.jpg');background-position: center;background-size: cover;">
+                    </div>
+                </div>
+                <div class="flex_center" style="margin-top: 50px;">
+                    <a class="btn_promo" href="menu.html">Lihat Semua Menu</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-<script src="menu.js"></script>
-<script src="navbar.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/navbar.js"></script>
 
 </html>

@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+    #navbar_menu {
+        display: none;
+    }
+
+    #burger_icon {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    div#burger_menu a.burger_detail{
+        display: none;
+    }
+}
