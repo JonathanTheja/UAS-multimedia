@@ -1,0 +1,28 @@
+.jumbotron{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#journey{
+    text-align: center;
+}
+
+.img_promo {
+    width: 95vw;
+}
+
+.produk_menu {
+    width: 95vw;
+    height: 95vw;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.group_menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 50px;
+}
