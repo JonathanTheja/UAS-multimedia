@@ -36,7 +36,6 @@
     font-size: 50px;
     margin-top: 10%;
     margin-right: 20px;
-    font-style: italic;
 }
 
 .custombtnbelisekarang{
@@ -166,7 +165,7 @@
 }
 
 .dibeli{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 15px;
     color: grey;
 }
@@ -295,4 +294,12 @@
   }
 
 
+/* batas menu ====================================================*/
+.daftar-menu{
+    background-color: #285430;
+}
+
+.custom-menu{
+    background-color: #9FBA1B;
+}
 
