@@ -1,0 +1,29 @@
+.jumbotron{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#journey{
+    text-align: center;
+}
+
+.img_promo {
+    width: 95vw;
+}
+
+.produk_menu {
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+}
+
+.detail_about_us {
+    /* width: 92vw; */
+    font-size: 15px;
+}
+
+.detail_about_us {
+    padding: 20px;
+}

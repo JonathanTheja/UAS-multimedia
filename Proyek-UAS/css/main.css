@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Rubik:wght@400;600&display=swap');
+
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+.navcolor{
+    background-color: rgb(243, 236, 176);
+}
+
+.logo{
+    font-size: 25px;
+}
+
+.logo-foot{
+    font-size: 35px;
+}
+
+.tea{
+    color: green;
+}
+
+.landing{
+    height: 717px;
+    background-image: url(../assets/Group-BG1@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.katalanding{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    width: 30%;
+    font-size: 50px;
+    margin-top: 10%;
+    margin-right: 20px;
+    font-style: italic;
+}
+
+.custombtnbelisekarang{
+    background-color: #285430;
+    color: white;
+    font-weight:bold;
+    font-size: 25px;
+    margin-top: 8%;
+    margin-right: 5%;
+}
+
+.custombtnbelisekarang:hover{
+    background-color: #285430;
+    color: whitesmoke;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.batas{
+    height: 15px;
+    background-color: #F3ECB0;
+}
+
+.promo{
+    background-color: #285430;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 600;
+    color: #ADE792;
+    margin-bottom: 30px;
+}
+
+.litle-title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #E5D9B6;
+    margin-bottom: 30px;
+}
+
+.coverbtn{
+    margin-top: 30px;
+}
+
+.custombtnpromo{
+    border-radius: 10px;
+    background-color: #F3ECB0;
+    color: black;
+    font-weight:bold;
+    font-size: 25px;
+}
+
+.custombtnpromo:hover{
+    background-color: #F3ECB0;
+}
+
+.laris{
+    height: 650px;
+    background-image: url(../assets/Path-1.png);
+    background-color: #285430;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+    padding-top: 60px;
+}
+
+.card-color{
+    background-color: #F3ECB0;
+    border-radius: 10%;
+}
+
+.img-product{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.lihat-menu{
+    margin-top: 100px;
+}
+
+.lokasi{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #285430;
+}
+
+.footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #E5D9B6;
+}
+
+.lokasi-kantor{
+    width: 70% ;
+}
+
+.social-media{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.title-contact{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.customsubmitbtn{
+    background-color: #285430;
+    border: #285430;
+}
+.customsubmitbtn:hover{
+    background-color: #429652;
+    border: #429652;
+}
+
+.namaproduct{
+    font-weight: 1000;
+    font-size: 30px;
+    color: #428E01;
+}
+
+.dibeli{
+    margin-top: 20px;
+    font-size: 15px;
+    color: grey;
+}
+
+
+
+/* ini batas untuk news ========================================================*/
+.landingnews{
+    height: 517px;
+    background-image: url(../assets/newsbg/Group-20.png),url(../assets/newsbg/Group-19.png),url(../assets/newsbg/Group-18.png),url(../assets/newsbg/Group-17.png),url(../assets/newsbg/Group-16.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title-news{
+    font-size: 50px;
+    font-weight: bold;
+    color: #428E01;
+}
+
+.isi{
+    margin-top: 4%;
+}
+
+.berita{
+    margin-top: 4%;
+    padding: 20px 50px;
+    border-radius: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.img-berita{
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.judul-berita{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.isi-berita{
+    font-size: 15px;
+}
+
+.tgl-post{
+    margin-top: 30px;
+    font-size: 12px;
+    color: #428E01;
+}
+
+.berita-pagination{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.custom-pagination{
+    margin: 3px 5px;
+    
+}
+
+.btn-pagination{
+    background-color: #285430;
+    color: whitesmoke;
+}
+
+.btn-pagination:hover{
+    background-color: #429652;
+}
+
+.borderlink{ /*ini untuk underline navbar */
+    border-bottom: solid 3px grey;
+}
+
+
+
+/* ini batas untuk about us ====================================================*/
+.landingaboutus{
+    height: 517px;
+    background-image: url(../assets/355320-PB2HS8-646.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+}
+
+.opacity{
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+/* untuk swiper */
+
+.swiper {
+    width: 540px;
+    height: 320px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+    background-image: url(../assets/_DSC8370.jpg);
+    background-position: center;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+    background-image: url(../assets/kafe-sekaligus-toko-baju-1.jpg);
+    background-position: center;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+    background-image: url(../assets/petani-teh.jpg);
+    background-position: center;
+  }
+
+
+

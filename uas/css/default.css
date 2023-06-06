@@ -1,0 +1,274 @@
+@font-face {
+    font-family: "calibri";
+    src: url('../fonts/Calibri\ Regular.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F3ECB0;
+    min-height: 100vh;
+    font-size: 20px;
+    font-family: "calibri", sans-serif;
+}
+
+.container {
+    /* padding: 20px 30px; */
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    background-color: #F3ECB0;
+    width: 100vw;
+    z-index: 50;
+}
+
+ul.navbar li a.page_now {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+}
+
+ul.navbar li {
+    float: left;
+}
+
+ul.navbar li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #344D67;
+}
+
+ul.navbar li#logo {
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+#img_logo {
+    height: 60px;
+    margin-right: 25px;
+}
+
+.font_logo {
+    font-size: 30px;
+}
+
+ul.navbar li a:hover {
+    background-color: #285430;
+    color: white;
+    border-radius: 5px;
+}
+
+#burger_icon {
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 2px;
+    /* padding-bottom: -6px; */
+    height: 43px;
+    background-color: #8CC63F;
+    font-size: 40px;
+    display: none;
+}
+
+#burger_icon:hover {
+    background-color: #285430;
+    color: white;
+}
+
+#burger_menu {
+    /* width: 25px;
+    height: 100px; */
+    margin-bottom: 5px;
+    display: none;
+}
+
+.burger_detail {
+    background-color: #285430;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    padding: 5px 0;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+a.burger_detail {
+    color: #d3f4a8;
+    text-decoration: none;
+}
+
+.burger_page_now {
+    background-color: #1c3b22;
+    color: #f4fee6;
+}
+
+a.burger_detail:hover {
+    background-color: #1c3b22;
+    color: #f4fee6;
+}
+
+.landing {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../assets/tea-time.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 60px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.landing#landing_news {
+    min-height: unset;
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../assets/Group\ 8.png");
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    color: #ADE792;
+    font-weight: bold;
+}
+
+.home_promo {
+    background-color: #285430;
+    margin-top: 20px;
+    padding: 30px 0 0 0;
+    overflow: hidden;
+}
+
+.img_promo {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.flex_center {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_promo {
+    padding: 10px 25px;
+    background-color: #F3ECB0;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn_promo:hover {
+    background-color: #d7d19a;
+}
+
+.home_menu {
+    background-image: url('../assets/Path\ 1.png');
+    min-height: 80vh;
+    background-size: cover;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.group_menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.produk_menu {
+    width: 350px;
+    background-color: white;
+    height: 350px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.about_us {
+    background-color: #285430;
+    margin-top: 20px;
+    padding: 30px 0;
+}
+
+.group_about_us {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #E5D9B6;
+}
+
+.foto_toko_utama {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://arsitagx-master-article.s3.ap-southeast-1.amazonaws.com/article-photo/577/kafe-sekaligus-toko-baju-1.jpg");
+    width: 100vw;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.detail_about_us {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.title_about_us {
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.teks_about_us {
+    padding-top: 20px;
+}
+
+.lokasi_toko {
+    background-color: #285430;
+    padding: 30px 0;
+}
