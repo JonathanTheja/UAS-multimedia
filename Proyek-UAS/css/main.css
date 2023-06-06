@@ -315,6 +315,12 @@
     background-position: center;
 }
 
+.swiper-slide:nth-child(4n) {
+    background-color: rgb(10, 184, 111);
+    background-image: url(../assets/345214-PAN3B2-605.jpg);
+    background-position: center;
+}
+
 
 /* batas menu ====================================================*/
 .daftar-menu {
