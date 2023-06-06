@@ -60,19 +60,42 @@
                         <a class="nav-link" href="#scrollspyHeading1">Minuman</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#scrollspyHeading2">Kue</a>
+                        <a class="nav-link" href="#scrollspyHeading2">Cake</a>
                     </li>
                 </ul>
             </nav>
             <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
-                data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2 custom-menu" tabindex="0"
-                id="navPaginationMinuman">
-                <h4 id="scrollspyHeading1" class="d-flex justify-content-center">Minuman</h4>
+                data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2 custom-menu" tabindex="0">
+                <div class="d-flex flex-column justify-content-center align-items-center p-3"
+                    style="border-radius: 20px;background-color: #d4cd8c;" id="detail">
+                    <div class="card card-color m-3 p-3 fs-1 text-center" style="border-radius: 20px;" id="nama"></div>
+                    <div class="d-flex flex-column flex-xl-row justify-content-evenly align-items-start">
+                        <div class="w-xl-0 w-100">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="./assets/kopi arabika.png" style="width: 450px;border-radius: 50px;" alt=""
+                                    id="gambar">
+                            </div>
+                            <div class="card card-color m-3 p-2 fs-3 text-center" style="border-radius: 20px;"
+                                id="harga"></div>
+                            <div class="m-3 p-2 text-white text-center"
+                                style="background-color: white;border-radius: 5px;background-color: #198754;cursor: pointer;"
+                                onmouseover="this.style.backgroundColor='#13653f'"
+                                onmouseout="this.style.backgroundColor='#198754'">Beli</div>
+                        </div>
+                        <div class="card card-color p-3 me-3 me-xl-0" style="border-radius: 20px;margin-left: 16px;">
+                            <div id="deskripsi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="navPaginationMinuman"></div>
+                <h4 id="scrollspyHeading1" class="d-flex justify-content-center mt-3">Minuman
+                </h4>
                 <select class="form-select form-select-sm" aria-label=".form-select-sm example"
                     onchange="updateMinuman(this.value)">
                     <option selected class="text-center" value="semua">Semua</option>
                     <option value="teh" class="text-center">Teh</option>
                     <option value="kopi" class="text-center">Kopi</option>
+
                 </select>
                 <div class="semua-minuman row d-flex justify-content-center" id="minuman">
                     <!-- <div class="card card-color m-3" style="width: 15rem;">
@@ -88,7 +111,7 @@
                 <div id="paginationMinuman"></div>
 
                 <div id="navPaginationKue"></div>
-                <h4 id="scrollspyHeading2">Kue</h4>
+                <h4 id="scrollspyHeading2">Cake</h4>
                 <div class="semua-minuman row d-flex justify-content-center" id="kue">
                     <!-- <div class="card card-color m-3" style="width: 15rem;">
                         <img src="./assets/Teh Melati.jpg" class="card-img-top img-product" alt="...">
@@ -115,5 +138,29 @@
 <script src="kue.js"></script>
 <script src="function.js"></script>
 <script src="./js/menu.js"></script>
+<script>
+    function detail() {
+        let idx = -1;
+        let url;
+        let selectedItem;
+        if (window.location.href.split('#minuman').length > 1) {
+            url = window.location.href;
+            idx = url.split('#minuman');
+            idx = idx[idx.length - 1];
+            selectedItem = minuman[idx];
+        } else if (window.location.href.split('#kue').length > 1) {
+            url = window.location.href;
+            idx = url.split('#kue');
+            idx = idx[idx.length - 1];
+            selectedItem = kue[idx];
+        }
+        document.getElementById('nama').innerText = selectedItem.nama;
+        document.getElementById('gambar').src = `./assets/${selectedItem.image}`;
+        document.getElementById('harga').innerText = formatRupiah(selectedItem.harga);
+        document.getElementById('deskripsi').innerText = selectedItem.deskripsi;
+    }
+    detail();
+    window.scrollTo(0, 150);
+</script>
 
 </html>
