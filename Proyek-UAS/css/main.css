@@ -347,3 +347,17 @@
     color: #ffffff;
     /* Set the desired font color */
 }
+
+#navbar-example2 .nav.nav-pills li.nav-item{
+    margin-right: 10px;
+}
+
+#navbar-example2 .nav.nav-pills li.nav-item a.nav-link {
+    background-color: #198754;
+    color: white;
+}
+
+#navbar-example2 .nav.nav-pills li.nav-item a.nav-link:hover {
+    background-color: #285430;
+    /* color: gray; */
+}
